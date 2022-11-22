@@ -39,3 +39,4 @@ nnoremap <leader>pi :PlugInstall<CR>
 nnoremap <leader>so :source %<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>c :Commentary<Co>
+nnoremap <leader>vrc :e ~/.config/nvim/init.vim<CR>
