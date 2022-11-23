@@ -13,3 +13,6 @@ vim.opt.colorcolumn = '80'
 vim.opt.incsearch = true
 
 vim.g.hardtime_default_on = 1
+-- vim.cmd("colorscheme nightfox")
+vim.cmd("colo seoul256")
+vim.opt.background = "dark"
