@@ -6,9 +6,14 @@ return require('packer').startup(function(use)
     use 'ap/vim-css-color'
     use 'takac/vim-hardtime'
     use 'xavierchow/vim-swagger-preview'
-    use 'williamboman/mason.nvim'
-    use 'neovim/nvim-lspconfig'
-    use 'williamboman/mason-lspconfig.nvim'
+    use {
+        'williamboman/mason.nvim',
+        requires = {
+            'neovim/nvim-lspconfig',
+            'williamboman/mason-lspconfig.nvim',
+            'jose-elias-alvarez/null-ls.nvim',
+        },
+    }
     use {
         'nvim-telescope/telescope.nvim',
         requires = {
