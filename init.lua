@@ -1,5 +1,7 @@
+require('load-plugins')
+require('set-plugins')
 require('globals')
-require('plugins')
--- lua require("mason").setup()
--- colo seoul256
 require('bindings')
+
+
+-- lua require("mason").setup()
