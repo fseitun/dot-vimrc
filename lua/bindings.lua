@@ -1,11 +1,18 @@
-vim.keymap.set('n', '<leader>pi', ':PackerInstall<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>so', ':source %<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>f', ':Files<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>c', ':Commentary<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>swa', '<Plug>GenerateDiagram', {noremap = true})
+local s = vim.keymap.set
 
-vim.keymap.set('n', '<leader>v', ':e ~/.config/nvim/init.lua<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>vb', ':e ~/.config/nvim/lua/bindings.lua<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>vp', ':e ~/.config/nvim/lua/plugins.lua<CR>', {noremap = true})
-vim.keymap.set('n', '<leader>vg', ':e ~/.config/nvim/lua/globals.lua<CR>', {noremap = true})
+s('n', '<leader>ps', ':PackerSync<CR>', {noremap = true})
+s('n', '<leader>so', ':source %<CR>', {noremap = true})
+s('n', '<leader>f', ':Files<CR>', {noremap = true})
+s('n', '<leader>c', ':Commentary<CR>', {noremap = true})
+s('n', '<leader>swa', '<Plug>GenerateDiagram', {noremap = true})
 
+s('n', '<leader>vi', ':e ~/.config/nvim/init.lua<CR>', {noremap = true})
+s('n', '<leader>vb', ':e ~/.config/nvim/lua/bindings.lua<CR>', {noremap = true})
+s('n', '<leader>vp', ':e ~/.config/nvim/lua/load-plugins.lua<CR>', {noremap = true})
+s('n', '<leader>vg', ':e ~/.config/nvim/lua/globals.lua<CR>', {noremap = true})
+
+local b = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', b.find_files, {})
+vim.keymap.set('n', '<leader>fg', b.live_grep, {})
+vim.keymap.set('n', '<leader>fb', b.buffers, {})
+vim.keymap.set('n', '<leader>fh', b.help_tags, {})
