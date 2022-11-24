@@ -1,0 +1,3 @@
+# dot-vimrc
+
+Neovim configuration.
