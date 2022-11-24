@@ -1,2 +1,3 @@
-require('plugins/treesitter')
+require('plugins/nvim-treesitter')
 require('plugins/telescope')
+require('plugins/mason')
