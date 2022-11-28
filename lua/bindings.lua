@@ -2,7 +2,6 @@ local s = vim.keymap.set
 
 s('n', '<leader>ps', ':PackerSync<CR>', {noremap = true})
 s('n', '<leader>so', ':source %<CR>', {noremap = true})
-s('n', '<leader>f', ':Files<CR>', {noremap = true})
 s('n', '<leader>c', ':Commentary<CR>', {noremap = true})
 s('n', '<leader>swa', '<Plug>GenerateDiagram', {noremap = true})
 
