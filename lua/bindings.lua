@@ -2,9 +2,10 @@ local s = vim.keymap.set
 
 s('n', '<leader>ps', ':PackerSync<CR>', {noremap = true})
 s('n', '<leader>so', ':source %<CR>', {noremap = true})
-s('n', '<leader>c', ':Commentary<CR>', {noremap = true})
+-- s('n', '<leader>c', ':Commentary<CR>', {noremap = true})
 s('n', '<leader>swa', '<Plug>GenerateDiagram', {noremap = true})
 
+s('n', '<leader>e', ':E<CR>', {noremap = true})
 s('n', '<leader>vi', ':e ~/.config/nvim/init.lua<CR>', {noremap = true})
 s('n', '<leader>vb', ':e ~/.config/nvim/lua/bindings.lua<CR>', {noremap = true})
 s('n', '<leader>vp', ':e ~/.config/nvim/lua/load-plugins.lua<CR>', {noremap = true})

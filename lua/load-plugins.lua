@@ -7,15 +7,6 @@ return require('packer').startup(function(use)
     use 'takac/vim-hardtime'
     use 'xavierchow/vim-swagger-preview'
     use {
-        'williamboman/mason.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim', -- required by null-ls
-            'neovim/nvim-lspconfig',
-            'williamboman/mason-lspconfig.nvim',
-            'jose-elias-alvarez/null-ls.nvim',
-        },
-    }
-    use {
         'nvim-telescope/telescope.nvim',
         requires = {
             'nvim-lua/plenary.nvim',
@@ -27,5 +18,5 @@ return require('packer').startup(function(use)
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
-    require('plugins/mason')
+    require('plugins/copilot')
 end)
