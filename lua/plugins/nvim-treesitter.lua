@@ -1,7 +1,25 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "javascript", "typescript", "tsx", "html", "css", "scss", "json", "lua", "bash", "yaml", "jsonc", "graphql", "regex", "gitignore", "dockerfile", "php" }, --, "spectral" },
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false
-  },
+    ensure_installed = {
+        "bash",
+        "css",
+        "dockerfile",
+        "gitignore",
+        "graphql",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "php",
+        "regex",
+        "scss",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+    }, 
+    highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false
+    },
 }
