@@ -17,10 +17,19 @@ return require('packer').startup(function(use)
     }
     use "EdenEast/nightfox.nvim"
     use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
+    use {
+        'jose-elias-alvarez/null-ls.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim',
+        },
+    }
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
     require('plugins/mason')
+    require('plugins/mason-lspconfig')
+    require('plugins/null-ls')
 end)
