@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
             'nvim-treesitter/nvim-treesitter',
         },
     }
-    use "EdenEast/nightfox.nvim"
+    use 'EdenEast/nightfox.nvim'
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
