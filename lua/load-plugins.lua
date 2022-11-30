@@ -16,8 +16,10 @@ return require('packer').startup(function(use)
         },
     }
     use "EdenEast/nightfox.nvim"
+    use 'williamboman/mason.nvim'
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
+    require('plugins/mason')
 end)
