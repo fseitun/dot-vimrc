@@ -25,6 +25,10 @@ return require('packer').startup(function(use)
             'nvim-lua/plenary.nvim',
         },
     }
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp' 
+    use 'saadparwaiz1/cmp_luasnip' 
+    use 'L3MON4D3/LuaSnip'
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
@@ -32,4 +36,5 @@ return require('packer').startup(function(use)
     require('plugins/mason')
     require('plugins/mason-lspconfig')
     require('plugins/null-ls')
+    require('plugins/nvim-cmp')
 end)
