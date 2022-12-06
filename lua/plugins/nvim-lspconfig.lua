@@ -32,8 +32,14 @@ local lsp_flags = {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig')['tsserver'].setup{
+require('lspconfig').tsserver.setup{
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
+}
+
+require('lspconfig').sumneko_lua.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
