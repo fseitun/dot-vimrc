@@ -34,15 +34,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
 
-    use {
-        'rmagatti/auto-session',
-        config = function()
-            require("auto-session").setup {
-                log_level = "error",
-                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
-            }
-        end
-    }
+    use 'rmagatti/auto-session'
 
     use 'ThePrimeagen/vim-be-good'
 
