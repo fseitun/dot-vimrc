@@ -26,10 +26,20 @@ return require('packer').startup(function(use)
         },
     }
 
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
+
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
-    require('plugins/mason')
+    require('plugins/mason') -- It's important that you set up the plugins in the following order: 1) mason.nvim 2) mason-lspconfig.nvim 3) Setup servers via lspconfig
     require('plugins/mason-lspconfig')
     require('plugins/null-ls')
+    require('plugins/nvim-cmp')
+    require('plugins/nvim-lspconfig')
 end)
