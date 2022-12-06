@@ -44,6 +44,8 @@ return require('packer').startup(function(use)
         end
     }
 
+    use 'ThePrimeagen/vim-be-good'
+
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
