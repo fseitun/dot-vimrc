@@ -1,7 +1,7 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'github/copilot.vim' 
-    use 'airblade/vim-gitgutter'
+    use 'lewis6991/gitsigns.nvim'
     use 'tpope/vim-commentary'
     use 'ap/vim-css-color'
     use 'takac/vim-hardtime'
@@ -54,4 +54,5 @@ return require('packer').startup(function(use)
     require('plugins/null-ls')
     require('plugins/nvim-cmp')
     require('plugins/nvim-lspconfig')
+    -- require('plugins/gitsigns')
 end)
