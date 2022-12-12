@@ -1,6 +1,6 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'github/copilot.vim' 
+    use 'github/copilot.vim'
     use 'lewis6991/gitsigns.nvim'
     use 'tpope/vim-commentary'
     use 'ap/vim-css-color'
