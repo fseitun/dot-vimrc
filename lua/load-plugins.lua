@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'tpope/vim-commentary'
     use 'ap/vim-css-color'
-    use 'takac/vim-hardtime'
+    -- use 'takac/vim-hardtime'
     use 'xavierchow/vim-swagger-preview'
     use {
         'nvim-telescope/telescope.nvim',
