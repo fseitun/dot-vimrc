@@ -38,6 +38,13 @@ return require('packer').startup(function(use)
 
     use 'ThePrimeagen/vim-be-good'
 
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+        },
+    }
+
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
@@ -47,4 +54,5 @@ return require('packer').startup(function(use)
     require('plugins/nvim-cmp')
     require('plugins/nvim-lspconfig')
     require('plugins/gitsigns')
+    require('plugins/nvim-tree')
 end)
