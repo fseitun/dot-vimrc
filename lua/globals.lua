@@ -14,6 +14,9 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = 'yes'
 vim.opt.colorcolumn = '80'
 vim.opt.incsearch = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+-- vim.opt.cursorline = true
 
 vim.g.hardtime_default_on = 1
 vim.cmd('colorscheme nightfox')
