@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
         },
     }
 
+    use "lukas-reineke/indent-blankline.nvim"
     use 'p00f/nvim-ts-rainbow'
 
     require('plugins/nvim-treesitter')
@@ -57,4 +58,5 @@ return require('packer').startup(function(use)
     require('plugins/nvim-lspconfig')
     require('plugins/gitsigns')
     require('plugins/nvim-tree')
+    require('plugins/indent-blankline')
 end)
