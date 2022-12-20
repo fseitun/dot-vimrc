@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
         },
     }
 
+    use 'p00f/nvim-ts-rainbow'
+
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
     require('plugins/copilot')
