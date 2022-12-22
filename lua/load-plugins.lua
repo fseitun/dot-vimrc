@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
             'nvim-treesitter/nvim-treesitter',
         },
     }
+    use 'nvim-treesitter/nvim-treesitter-context'
+
     use 'EdenEast/nightfox.nvim'
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
@@ -50,6 +52,7 @@ return require('packer').startup(function(use)
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
+    require('plugins/treesitter-context')
     require('plugins/copilot')
     require('plugins/mason') -- It's important that you set up the plugins in the following order: 1) mason.nvim 2) mason-lspconfig.nvim 3) Setup servers via lspconfig
     require('plugins/mason-lspconfig')
