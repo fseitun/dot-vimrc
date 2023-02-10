@@ -16,6 +16,7 @@ vim.opt.colorcolumn = '80'
 vim.opt.incsearch = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.wrap = false
 -- vim.opt.cursorline = true
 
 vim.g.hardtime_default_on = 1
