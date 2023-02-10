@@ -50,7 +50,7 @@ require('lspconfig').cssls.setup{
     capabilities = capabilities,
 }
 
-require('lspconfig').intelephense.setup{
+require('lspconfig').psalm.setup{
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
