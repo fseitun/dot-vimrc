@@ -38,7 +38,7 @@ require('lspconfig').tsserver.setup{
     capabilities = capabilities
 }
 
-require('lspconfig').sumneko_lua.setup{
+require('lspconfig').sumneko_ls.setup{
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
