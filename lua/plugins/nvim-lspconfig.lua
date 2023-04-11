@@ -38,11 +38,11 @@ require('lspconfig').tsserver.setup{
     capabilities = capabilities
 }
 
-require('lspconfig').sumneko_ls.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    capabilities = capabilities,
-}
+-- require('lspconfig').sumneko_ls.setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+--     capabilities = capabilities,
+-- }
 
 require('lspconfig').cssls.setup{
     on_attach = on_attach,
@@ -55,3 +55,9 @@ require('lspconfig').psalm.setup{
     flags = lsp_flags,
     capabilities = capabilities,
 }
+
+-- require('lspconfig').angularls.setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+--     capabilities = capabilities,
+-- }
