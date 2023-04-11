@@ -11,9 +11,12 @@ s('n', '<leader>vb', ':e ~/.config/nvim/lua/bindings.lua<CR>', {noremap = true})
 s('n', '<leader>vp', ':e ~/.config/nvim/lua/load-plugins.lua<CR>', {noremap = true})
 s('n', '<leader>vg', ':e ~/.config/nvim/lua/globals.lua<CR>', {noremap = true})
 
-s('n', '<leader>n', ':bnext<CR>', {noremap = true})
-s('n', '<leader>p', ':bprevious<CR>', {noremap = true})
-s('n', '<leader>d', ':bdelete<CR>', {noremap = true})
+s('n', '<leader>bl', ':ls<CR>', {noremap = true})
+s('n', '<leader>bn', ':bnext<CR>', {noremap = true})
+s('n', '<leader>bp', ':bprevious<CR>', {noremap = true})
+s('n', '<leader>bd', ':bdelete<CR>', {noremap = true})
+
+s('n', '<leader>nh', ':noh<CR>', {noremap = true})
 
 local b = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', b.find_files, {})
