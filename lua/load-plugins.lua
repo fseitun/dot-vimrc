@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter-context'
 
     use 'EdenEast/nightfox.nvim'
+    -- use 'folke/tokyonight.nvim'
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
@@ -38,7 +39,7 @@ return require('packer').startup(function(use)
 
     use 'rmagatti/auto-session'
 
-    use 'ThePrimeagen/vim-be-good'
+    -- use 'ThePrimeagen/vim-be-good'
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -50,6 +51,13 @@ return require('packer').startup(function(use)
     use "lukas-reineke/indent-blankline.nvim"
     use 'p00f/nvim-ts-rainbow'
     use 'RRethy/vim-illuminate'
+
+    -- use 'manzeloth/live-server'
+
+    -- use {
+    --   "vinnymeller/swagger-preview.nvim",
+    --   run = "npm install -g swagger-ui-watcher",
+    -- }
 
     require('plugins/nvim-treesitter')
     require('plugins/telescope')
@@ -64,4 +72,5 @@ return require('packer').startup(function(use)
     require('plugins/nvim-tree')
     require('plugins/indent-blankline')
     require('plugins/vim-illuminate')
-end)
+    -- require('plugins/swagger-preview')
+  end)
