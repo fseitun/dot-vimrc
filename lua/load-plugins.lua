@@ -52,6 +52,11 @@ return require('packer').startup(function(use)
     use 'p00f/nvim-ts-rainbow'
     use 'RRethy/vim-illuminate'
 
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
     -- use 'manzeloth/live-server'
 
     -- use {
@@ -73,4 +78,10 @@ return require('packer').startup(function(use)
     require('plugins/indent-blankline')
     require('plugins/vim-illuminate')
     -- require('plugins/swagger-preview')
+    require('plugins/nvim-lualine')
   end)
+
+-- TODOS
+-- add sindrets/diffview.nvim-lualine
+-- change tpope/vim-commentary to numToStr/Comment.nvim-lualine
+-- evaluate windwo/nvim-autopairs
