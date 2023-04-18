@@ -82,6 +82,5 @@ return require('packer').startup(function(use)
   end)
 
 -- TODOS
--- add sindrets/diffview.nvim-lualine
--- change tpope/vim-commentary to numToStr/Comment.nvim-lualine
+-- Evalueate change tpope/vim-commentary to numToStr/Comment.nvim-lualine
 -- evaluate windwo/nvim-autopairs
