@@ -79,6 +79,7 @@ return require('packer').startup(function(use)
     require('plugins/vim-illuminate')
     -- require('plugins/swagger-preview')
     require('plugins/nvim-lualine')
+    require('plugins/auto-session')
   end)
 
 -- TODOS
