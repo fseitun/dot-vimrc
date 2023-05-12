@@ -18,6 +18,8 @@ s('n', '<leader>bd', ':bdelete<CR>', {noremap = true})
 
 s('n', '<leader>nh', ':noh<CR>', {noremap = true})
 
+s('n', '<leader>tw', ':set wrap!<CR>', {noremap = true})
+
 local b = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', b.find_files, {})
 vim.keymap.set('n', '<leader>fg', b.live_grep, {})
